@@ -1,0 +1,30 @@
+<%= form_for @profile do |f| %>
+  <% @profile.errors.full_messages.each do |msg| %>
+    <p class="alert alert-danger"><%= msg %></p>
+  <% end %>
+
+  <div class="form-group">
+    <label>Full Name</label>
+    <%= f.text_field :full_name, placeholder: "Full Name", class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <label>Telephone number</label>
+    <%= f.number_field :tel_nr, placeholder: "Tel number", class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <label>Street</label>
+    <%= f.text_field :street, placeholder: "Street name", class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <label>House number</label>
+    <%= f.text_field :house_nr, placeholder: "House number", class: "form-control" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Save", class: "btn btn-primary" %>
+    <%= link_to "Back", root_path, class: "btn btn-default" %>
+  </div>
+<% end %>
