@@ -7,4 +7,9 @@ class CategoriesController < ApplicationController
     @categories = @pet.categories
   end
 
+
+def index
+ @categories = Category.all
+end
+
 end

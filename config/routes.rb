@@ -1,20 +1,14 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
-  root to: 'pages#home'
+ 
+  root to: 'categories#index'
 
-   devise_for :users
-
-   resources :users, only: [:show]
-   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html		    # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-   resources :categories, only: [:show]
-
-=======
-  root to: 'pages#home' 
+  resources :categories
 
   devise_for :users
 
   resources :users, only: [:show]
+  resources :profiles, only: [:new, :edit, :create, :update]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  resources :categories, only: [:show]
->>>>>>> 54e607330d6148a0598d271920eceb560d79ba1d
+
+ 
 end
