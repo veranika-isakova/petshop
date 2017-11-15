@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <% @category.pets.each do |pet| %>
+    <div class="thumbnail">
+      <%= image_tag pet.remote_image_url %>
+      <div class="caption">
+        <h3><% pet.name %></h3>
+        <p>
+          <ul>
+            <li>Species: <%= pet.species %> </li>
+            <li>Gender: <%= pet.gender %> </li>
+            <li>Age: <%= pet.age %> </li>
+            <li>Price: <%= pet.price %> </li>
+          </ul>
+        </p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+      </div>
+    </div>
+  <% end %>
+  </div>
+</div>
