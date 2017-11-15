@@ -4,7 +4,7 @@ class CategoriesController < ApplicationController
   end
 
   def show
-    @categories = @pet.categories
+    @categories = Category.find[params[:id]]
   end
 
 end
