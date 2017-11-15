@@ -1,0 +1,25 @@
+<h4>Categories</h4>
+<% @categories.each do |category| %>
+  <span class="label label-success"><%= category.name %></span>
+<% end %>
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img  ..... >
+      <div class="caption">
+        <% @category.pets.each do |pet| %>
+          <p>Name: <%= @pet.name %><p>
+            <p><ul>
+              <li>Species: <%= @pets.species %> </li>
+              <li>Gender: <%= @pets.gender %> </li>
+              <li>Age: <%= @pets.age %> </li>
+              <li>Price: <%= @pets.price %> </li>
+            </ul></p>
+          <br>
+        <% end %>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+</div>
