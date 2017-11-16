@@ -1,6 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
 div.species{
     width: 200px;
     float:left;
@@ -14,3 +15,7 @@ div.species{
 //   background: url('') center center no-repeat;
 //   background-size: cover;
 // }
+
+.header-icon {
+  top: 17px;
+}
