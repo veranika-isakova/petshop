@@ -1,25 +1,14 @@
-<div class="row">
-  <div class="col-md-3">
-    <ul class="sidebar-list">
 
+<div class="page-header">
+  <h1>Lovely Pets <small>Subtext for head</small></h1>
+</div>
 
-    </ul>
-  </div>
-  <div class="col-md-9">
-    <div class="panel panel-primary">
-      <div class="panel-heading">
-      <h2>Categories</h2>
-      </div>
-      <div class="panel-body">
+<div class="species">
+  <ul class="nav nav-pills nav-stacked">
+    <li role="presentation" class="active"><a href="#">Cats</a></li>
+    <li role="presentation"><a href="#">Dogs</a></li>
+    <li role="presentation"><a href="#">Birds</a></li>
+    <li role="presentation"><a href="#">Hedgehog</a></li>
+  </ul>
+</div>
 
-        <% @categories.each do |category| %>
-        <div class="row">
-          <div class="col-sm-6 col-md-4">
-            <h4>  <%= link_to  category.name %></h4>
-          </div>
-          <div class="thumbnail">
-
-
-          </div>
-        </div>
-        <% end %>

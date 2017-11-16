@@ -1,6 +1,21 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+div.species{
+    width: 200px;
+    float:left;
+    text-align: center;
+}
+
+// div.page-header{
+//   width: 100%;
+//   height: 100%;
+//   padding: 100px;
+//   background: url('') center center no-repeat;
+//   background-size: cover;
+// }
+
 .header-icon {
   top: 17px;
 }
