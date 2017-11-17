@@ -1,5 +1,5 @@
 class CategoriesController < ApplicationController
-  before_action :set_category
+  # before_action :set_category
 
   def index
     @categories = Category.all
@@ -11,10 +11,5 @@ class CategoriesController < ApplicationController
   end
 
 
-  private
 
-    def set_category
-      @category = Category(params[:id])
-
-    end
 end
