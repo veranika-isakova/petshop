@@ -21,3 +21,4 @@ bird3 = Pet.create!(name: "Karlie", species: "Bird", gender: "Female", age: 1, p
 hedgehog1 = Pet.create!(name: "Veranika", species: "Hedgehog", gender: "Female", age: 2, price: 100, remote_image_url: "http://res.cloudinary.com/teateearu/image/upload/c_scale,w_242/v1510910089/slack-imgs.com_ynhrub.jpg", category: hedgehogs)
 hedgehog2 = Pet.create!(name: "Lucy", species: "Hedgehog", gender: "Female", age: 5, price: 150, remote_image_url: "http://res.cloudinary.com/teateearu/image/upload/c_scale,w_242/v1510910126/14e3b52291894c90b561e2e394eab5ef_crqcxh.jpg", category: hedgehogs)
 hedgehog3 = Pet.create!(name: "Gabrijela", species: "Hedgehog", gender: "Female", age: 3, price: 200, remote_image_url: "http://res.cloudinary.com/teateearu/image/upload/c_scale,w_242/v1510910226/why-a-pygmy-hedgehog-is-the-perfect-pet-10-pictures-4_a8clqi.jpg", category: hedgehogs)
+
