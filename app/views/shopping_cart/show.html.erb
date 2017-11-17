@@ -1,0 +1,19 @@
+<h2>Shopping Cart</h2>
+<div>
+  <ul>
+    <% @cart.order_lines.each do |order_line| %>
+      <li>Item: <%= order_line.pet.name %> </li>
+      <li>Price: <%= order_line.product.price %></li>
+      <li>Quantity: <%= order_line.amount %></li>
+        <ul>
+          <li>
+            <%= link_to "Add one", order_line_add_path(:id => order_line), method: :post %>
+            <%= link_to "Reduce one", order_line_reduce_path(:id => line_item), method: :post %>
+          </li>
+          <li>
+            <%= link_to "Remove item", order_line_path(order_line), method: :delete %>
+          </li>
+      </ul>
+    <% end %>
+  </ul>
+</div>

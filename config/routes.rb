@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   resources :categories
   resources :pets
+  resources :shopping_carts
 
   devise_for :users
 

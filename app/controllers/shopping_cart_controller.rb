@@ -1,6 +1,6 @@
 class ShoppingCartController < ApplicationController
   def index
-    @order_lines = @shopping_cart.order_lines
+    @order_lines = shopping_cart.order_lines
   end
 
   def create
