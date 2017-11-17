@@ -1,10 +1,10 @@
 class ShoppingCartController < ApplicationController
   def index
-    # @pets = cart.pets ???
+    @order_lines = @shopping_cart.order_lines
   end
 
   def create
-    # add_pet (pet, amount) ???
+    # add_pet (pet, amount)
     # add something to it
     pet = Pet.find(params[:pet_id])
     amount = params[:amount]
