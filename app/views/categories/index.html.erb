@@ -1,12 +1,12 @@
-
-<div class="page-header">
-  <h1>Lovely Pets <small>Subtext for head</small></h1>
+<div class="banner">
+ <h1>Lovely Pets
+ <p><small>bundles of love wrapped in fur</small></p></h1>
 </div>
 
 <div class="species">
-  <ul class="nav nav-pills nav-stacked">
-    <% @categories.each do |category| %>
-    <li role="presentation" ><%= link_to category.name, category_path(category.id) %></li>
-    <% end %>
-  </ul>
+ <ul class="nav nav-pills nav-justified">
+   <% @categories.each do |category| %>
+   <li role="presentation" ><%= link_to category.name, category_path(category.id) %></li>
+   <% end %>
+ </ul>
 </div>

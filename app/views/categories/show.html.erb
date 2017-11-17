@@ -1,19 +1,26 @@
-<div class="row">
+<div class="species">
+ <ul class="nav nav-pills nav-justified">
+   <% @categories.each do |category| %>
+   <li role="presentation" ><%= link_to category.name, category_path(category.id) %></li>
+   <% end %>
+ </ul>
+</div>
+<br>
+<br>
+<div class="column">
   <div class="col-sm-6 col-md-4">
     <% @category.pets.each do |pet| %>
     <div class="thumbnail">
       <%= image_tag pet.remote_image_url %>
       <div class="caption">
+        <ul>
         <h3><%= pet.name %></h3>
-        <p>
-          <ul>
             <li>Species: <%= pet.species %> </li>
             <li>Gender: <%= pet.gender %> </li>
             <li>Age: <%= pet.age %> </li>
             <li>Price: <%= pet.price %> </li>
-          </ul>
-        </p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+        <p><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
+      </ul>
       </div>
     </div>
   <% end %>

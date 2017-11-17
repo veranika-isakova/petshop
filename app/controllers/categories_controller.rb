@@ -8,6 +8,7 @@ class CategoriesController < ApplicationController
   def show
     @category = Category.find(params[:id])
     @pets = @category.pets
+    @categories = Category.all
   end
 
 
