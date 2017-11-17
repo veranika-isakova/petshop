@@ -4,7 +4,7 @@ describe "Signing up" do
   before do
     visit root_url
     click_on "Sign Up"
-    fill_in "user_email", with: "mail@codaisseurup.com"
+    fill_in "user_email", with: "mail@codaisseur.com"
   end
 
   context "when password is too short" do
