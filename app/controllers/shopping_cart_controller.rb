@@ -16,9 +16,12 @@ class ShoppingCartController < ApplicationController
     end
   end
 
-  def destroy
-    # remove something from it
-  end
+    def destroy
+   @cart = @shopping_cart
+   @cart.destroy
+   session[:cart_id] = nil
+   redirect_to root_path
+    end
 
   private
 
